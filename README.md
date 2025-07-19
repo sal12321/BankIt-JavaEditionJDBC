@@ -27,7 +27,7 @@
 <h2 align="center">Languages & Frameworks & Tools & Abilities</h2>
 
 <p align="center">
-   <code><img title="Java" height="25" src="https://github.com/zumrudu-anka/zumrudu-anka/blob/master/images/java.svg"></code>
+   <code><img title="Java" height="25" src="https://github.com/sal12321/images/java.svg"></code>
    <code><img title="C++" height="25" src="https://github.com/zumrudu-anka/zumrudu-anka/blob/master/images/cpp.svg"></code>
      <code><img title="Python" height="25" src="https://github.com/zumrudu-anka/zumrudu-anka/blob/master/images/python.svg"></code>
      <code><img title="JSON" height="25" src="https://github.com/zumrudu-anka/zumrudu-anka/blob/master/images/json.svg"></code>
