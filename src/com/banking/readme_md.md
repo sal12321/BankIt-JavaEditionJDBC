@@ -96,17 +96,17 @@ CREATE TABLE logs (
     timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Insert default admin (username: admin, password: admin123)
+-- Insert default admin (username: admin, password: 801913)
 INSERT INTO admins (username, password) VALUES 
-('admin', 'f2d00f7fd3aa1d5c1ab0d30fcf4c8d72e7b2e7cfe5a1a2e1d1c1b1a1234567890');
+('admin', '039df8f1999cb4a6675860fe51c00f48ca7a9c3489062e476182ee1e8ba5e89a'); 
 ```
 
 ### 2. Project Setup
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/banking-management-system.git
-cd banking-management-system
+git clone https://github.com/sal12321/BankIt-JavaEditionJDBC
+cd BankIT
 ```
 
 2. Add MySQL Connector/J to your classpath:
@@ -185,28 +185,28 @@ banking-management-system/
 ## 📊 Database Schema
 
 ### Users Table
-| Column | Type | Description |
-|--------|------|-------------|
+| Column | Type         | Description           |
+|--------|------        |-------------          |
 | acc_no | INT (PK, AI) | Unique account number |
-| name | VARCHAR(100) | User's full name |
-| email | VARCHAR(100) | User's email address |
-| phone | BIGINT | User's phone number |
-| balance | DOUBLE | Current account balance |
-| pin | VARCHAR(64) | Hashed password |
-| is_active | BOOLEAN | Account status |
-| created_at | TIMESTAMP | Account creation date |
+| name   | VARCHAR(100) | User's full name      |
+| email  | VARCHAR(100) | User's email address  |
+| phone  | BIGINT       | User's phone number   |
+| balance| DOUBLE       | Current account balance |
+| pin    | VARCHAR(64)  | Hashed password       |
+| is_active| BOOLEAN    | Account status        |
+| created_at| TIMESTAMP | Account creation date |
 
 ### Logs Table
-| Column | Type | Description |
-|--------|------|-------------|
-| id | INT (PK, AI) | Log entry ID |
-| Who | VARCHAR(20) | User type (User/Admin) |
-| WhoseId | INT | Account performing action |
-| What | VARCHAR(50) | Action performed |
-| WhomeId | INT | Target account (if applicable) |
-| message | VARCHAR(200) | Action description |
-| status | VARCHAR(20) | Success/Failed |
-| timestamp | TIMESTAMP | When action occurred |
+| Column | Type           | Description           |
+|--------|------         |-------------           |
+| id      | INT (PK, AI) | Log entry ID           |
+| Who     | VARCHAR(20) | User type (User/Admin)  |
+| WhoseId | INT         | Account performing action |
+| What    | VARCHAR(50) | Action performed        |
+| WhomeId | INT         | Target account (if applicable) |
+| message | VARCHAR(200)| Action description     |
+| status   | VARCHAR(20)| Success/Failed         |
+| timestamp| TIMESTAMP  | When action occurred   |
 
 ## 🔧 Key Features Explained
 
@@ -239,11 +239,11 @@ banking-management-system/
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📞 Contact
+## 📞 Contact 7050046913
 
-Your Name - [your.email@example.com](mailto:your.email@example.com)
+Your Name - [aaqib alam](mailto:your.aaqibalam290@gmail.com)
 
-Project Link: [https://github.com/yourusername/banking-management-system](https://github.com/yourusername/banking-management-system)
+Project Link: [https://github.com/sal12321/BankIt-JavaEditionJDBC](https://github.com/sal12321/BankIt-JavaEditionJDBC)
 
 ## 🙏 Acknowledgments
 

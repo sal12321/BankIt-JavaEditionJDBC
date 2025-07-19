@@ -1,8 +1,4 @@
 # 🏦 Banking Management System
-![Java](https://img.shields.io/badge/Java-17-blue)
-![MySQL](https://img.shields.io/badge/Database-MySQL-yellow)
-![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
-
 
 A robust **console-based banking application** built using Java and MySQL. This system provides secure user and admin functionalities like account creation, balance checking, fund transfers, and detailed logging of all operations.
 
@@ -109,8 +105,9 @@ CREATE TABLE logs (
 
 -- Insert default admin (admin/admin123)
 INSERT INTO admins (username, password) VALUES
-('admin', 'f2d00f7fd3aa1d5c1ab0d30fcf4c8d72e7b2e7cfe5a1a2e1d1c1b1a1234567890');
-```
+('admin', '039df8f1999cb4a6675860fe51c00f48ca7a9c3489062e476182ee1e8ba5e89a');
+``` 
+### pass for admin is 801913
 
 ### 2. Project Setup
 
@@ -143,12 +140,15 @@ If you're on Windows, use the provided `run.bat`:
 
 ```bat
 @echo off
+REM Compile the Java file to preserve package structure in output
 javac -d . src\com\banking\BankingApp.java
+
+REM Run the compiled class from the correct package and include the lib
 java -cp ".;lib\mysql-connector-j-9.3.0.jar" src.com.banking.BankingApp
 pause
 ```
 
-> Use `:` instead of `;` as classpath separator on Linux/macOS and escape backslashes properly if needed.
+> On Linux/macOS use `:` instead of `;` as the classpath separator.
 
 ---
 
@@ -203,6 +203,71 @@ bankIT/
 
 ---
 
+## 🔧 Quick Setup for Users
+
+```txt
+📦 SETUP INSTRUCTIONS TO RUN THIS JAVA BANKING PROJECT LOCALLY
+
+✅ Prerequisites:
+-----------------
+1. Install Java JDK (8 or above)
+2. Install MySQL Server
+3. Create a database named `forBanking` and import the required tables (see below).
+4. Clone or download this GitHub repository
+5. Open a terminal or PowerShell and navigate into the project folder.
+
+📁 Folder Structure:
+--------------------
+BankIt-JavaEditionJDBC/
+├── run.bat
+├── lib/
+│   └── mysql-connector-j-9.3.0.jar
+├── src/
+│   └── com/
+│       └── banking/
+│           └── BankingApp.java
+
+🛠️ How to Run:
+---------------
+Step 1: Open terminal in this folder  
+Step 2: Run the batch file (Windows):
+
+```
+
+.\run.bat
+
+```
+
+Linux/macOS:
+```
+
+javac -d . src/com/banking/BankingApp.java java -cp ".\:lib/mysql-connector-j-9.3.0.jar" src.com.banking.BankingApp
+
+````
+
+🧠 NOTE: Make sure your `BankingApp.java` uses:
+```java
+package src.com.banking;
+````
+
+## 📝 Credentials Setup:
+
+Inside `BankingApp.java`, update your DB credentials:
+
+```java
+private static final String DATABASE_URL = "jdbc:mysql://localhost:3306/forBanking";
+private static final String DATABASE_USERNAME = "your_mysql_username";
+private static final String DATABASE_PASSWORD = "your_mysql_password";
+```
+
+## 🎉 DONE!
+
+You can now run and test the application!
+
+````
+
+---
+
 ## 📊 Database Schema Summary
 
 ### `users` Table
@@ -239,7 +304,7 @@ You can create an executable JAR to simplify distribution:
 
 ```bash
 jar cfe bankIT.jar src.com.banking.BankingApp src/com/banking/*.class
-```
+````
 
 > This creates a JAR file with the entry point `src.com.banking.BankingApp`
 
@@ -257,44 +322,18 @@ javac -d . src\com\banking\BankingApp.java
 
 ---
 
-## 💾 Optional: GitHub Deployment Steps
-
-1. Initialize the repo:
-
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-```
-
-2. Push to GitHub:
-
-```bash
-git remote add origin https://github.com/yourusername/banking-management-system.git
-git push -u origin main
-```
-
-3. Add `.gitignore`:
-
-```
-*.class
-*.jar
-*.log
-.DS_Store
-```
-
 ---
 
 ## 📄 License
 
 This project is licensed under the **MIT License**.
 
-## 📞 Contact
+## 📞 Contact 7050046913
 
-**Your Name**\
-[your.email@example.com](mailto\:your.email@example.com)
+**Aaqib alam**\
+[MAIL TO ](mailto\:your.aaqibalam290@gmail.com)
 
-GitHub: [github.com/yourusername/banking-management-system](https://github.com/yourusername/banking-management-system)
+GitHub: [https://github.com/sal12321/BankIt-JavaEditionJDBC](https://github.com/sal12321/BankIt-JavaEditionJDBC)
 
 ---
 
