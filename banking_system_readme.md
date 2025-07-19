@@ -1,4 +1,8 @@
 # 🏦 Banking Management System
+![Java](https://img.shields.io/badge/Java-17-blue)
+![MySQL](https://img.shields.io/badge/Database-MySQL-yellow)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+
 
 A robust **console-based banking application** built using Java and MySQL. This system provides secure user and admin functionalities like account creation, balance checking, fund transfers, and detailed logging of all operations.
 
