@@ -1,40 +1,51 @@
-# Hi I'm Rifat 👋
-[![Linkedin Badge](https://img.shields.io/badge/-abdullahalrifat-blue?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/abdullahalrifat/)](https://www.linkedin.com/in/abdullahalrifat/)
-[![Medium Badge](https://img.shields.io/badge/-@__abdullahalrifat95-000000?style=flat&labelColor=000000&logo=Medium&link=https://medium.com/@_abdullahalrifat95)](https://medium.com/@_abdullahalrifat95)
-[![Gmail Badge](https://img.shields.io/badge/-abdullahalrifat95-c14438?style=flat&logo=Gmail&logoColor=white&link=mailto:abdullahalrifat95@gmail.com)](mailto:abdullahalrifat95@gmail.com)
-[![Facebook Badge](https://img.shields.io/badge/-abdullahalrifatcse-%231877F2.svg?&style=flat-square&logo=facebook&logoColor=white&link=https://www.facebook.com/abdullahalrifatcse)](https://www.facebook.com/abdullahalrifatcse)
-[![Facebook Badge](https://img.shields.io/badge/-abdullahalrifat.github.io-%231877F2.svg?&style=flat-square&logoColor=white&link=https://abdullahalrifat.github.io/)](https://abdullahalrifat.github.io/)
+<h3 align="center">Hello there, I'm Aaqib 👋</h3>
+<h5 align="center">
+  <code>
+    <a href="https://www.linkedin.com/in/aaqib-alam-50929a204/" title="LinkedIn"><img width="22" src="https://github.com/zumrudu-anka/zumrudu-anka/blob/master/images/linkedin.svg"> LinkedIn</a></code>
 
-Welcome to my profile! I'm a Software Engineer from Bangladesh. Thanks for visiting and I'd love to [connect](https://www.linkedin.com/in/abdullahalrifat/)!
+</h5>
+<br>
+<p align="center">
+  Hi, I'm Aaqib, Computer Engineer & Software Developer from India
+  <br>
+  <br>
+  🎓 I graduating from Amity University Computer Engineering Department
+  <br>
+  💻 I love writing code and learn anythings about it
+  <br>
+  🔬 I’m currently working on Java Development
+  <br>
+  📚 I’m currently working on my web project.
+  <br>
+  💬 Ask me about <a href="https://github.com/zumrudu-anka/zumrudu-anka/issues" title="Issues">Here</a>
+  <br>
+  📫 How to reach me: <a href="mailto: aaqibalam291@gmail.com">aaqibalam291@gmail.com</a>
+</p>
+
+<hr>
+
+<h2 align="center">Languages & Frameworks & Tools & Abilities</h2>
+
+<p align="center">
+   <code><img title="Java" height="25" src="https://github.com/zumrudu-anka/zumrudu-anka/blob/master/images/java.svg"></code>
+   <code><img title="C++" height="25" src="https://github.com/zumrudu-anka/zumrudu-anka/blob/master/images/cpp.svg"></code>
+     <code><img title="Python" height="25" src="https://github.com/zumrudu-anka/zumrudu-anka/blob/master/images/python.svg"></code>
+     <code><img title="JSON" height="25" src="https://github.com/zumrudu-anka/zumrudu-anka/blob/master/images/json.svg"></code>
+     <code><img title="HTML5" height="25" src="https://github.com/zumrudu-anka/zumrudu-anka/blob/master/images/html5.svg"></code>
+     <code><img title="CSS" height="25" src="https://github.com/zumrudu-anka/zumrudu-anka/blob/master/images/css.svg"></code>
+     <code><img title="Javascript" height="25" src="https://github.com/zumrudu-anka/zumrudu-anka/blob/master/images/javascript.svg"></code>
+</p>
+
+<hr>
+<p align = "center">
+<a href = "https://www.linkedin.com/in/aaqib-alam-50929a204/"> Aaqib Alam </a>
+</p>
 
 
 
+<hr>
+<h4 align="center"><a href=https://github.com/sal12321/BankIt-JavaEditionJDBC/tree/main?tab=repositories" title="Show Repositories">🔎 Show More 🔍</a></h4>
 
-
-![rifat's github stats](https://github-readme-stats.vercel.app/api?username=abdullahalrifat&show_icons=true)
-
-
-### Languages and Tools
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/c/c.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/cpp/cpp.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/php/php.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"></code>
-
-
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/postgresql/postgresql.png"></code>
-
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/docker/docker.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/aws/aws.png"></code>
-
-
-
- ![visitors](https://visitor-badge.laobi.icu/badge?page_id=abdullahalrifat.abdullahalrifat)
- 
-⭐️ from [@abdullahalrifat](https://github.com/abdullahalrifat)
+<p align = "center">
+    ⭐️ From <a href="">Aaqib Alam</a>
+</p>
