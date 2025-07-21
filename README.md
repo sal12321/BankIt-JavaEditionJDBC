@@ -9,7 +9,7 @@
   Hi, I'm Aaqib, Computer Engineer & Software Developer from India
   <br>
   <br>
-  🎓 I graduating from Amity University Computer Engineering Department
+  🎓 I'm graduating from Amity University Computer Engineering Department
   <br>
   💻 I love writing code and learn anythings about it
   <br>
