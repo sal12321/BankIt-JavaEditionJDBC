@@ -1,4 +1,4 @@
-<h3 align="center">Hello there, I'm Aaqib 👋</h3>
+<h3 align="center">Hello there, I am Aaqib 👋</h3>
 <h5 align="center">
   <code>
     <a href="https://www.linkedin.com/in/aaqib-alam-50929a204/" title="LinkedIn"><img width="22" src="https://github.com/zumrudu-anka/zumrudu-anka/blob/master/images/linkedin.svg"> LinkedIn</a></code>
