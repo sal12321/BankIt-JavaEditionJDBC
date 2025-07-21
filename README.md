@@ -17,7 +17,7 @@
   <br>
   📚 I’m currently working on my web project.
   <br>
-  💬 Ask me about <a href="https://github.com/sal12321/sal12321/issues" title="Issues">Here</a>
+  💬 Ask me about <a href="https://github.com/sal12321/sal12321/sal12321/issues" title="Issues">Here</a>
   <br>
   📫 How to reach me: <a href="mailto: aaqibalam291@gmail.com">aaqibalam291@gmail.com</a>
 </p>
