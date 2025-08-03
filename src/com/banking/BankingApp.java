@@ -10,10 +10,10 @@ public class BankingApp {
 
 
     static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-    private static final String url = "jdbc:mysql://localhost:3306/forBanking";
+    private static final String url = "jdbc:mysql://localhost:3306/forBanking"; 
 
-    private static final String username = "root";
-    private static final String password = "root@123";
+    private static final String username = "root";  //  replace it with your username
+    private static final String password = "root@123"; // replace it with your password
 
     public static boolean isValidAmount(double amount, double balance) {
         return (amount > 0 && amount <= balance);
