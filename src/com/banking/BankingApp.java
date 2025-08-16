@@ -5,6 +5,7 @@ import java.sql.*;
 import java.util.InputMismatchException;
 import java.io.BufferedReader;
 import java.io.IOException;
+import src.com.banking.passHash.PasswordHasher ;
 
 public class BankingApp {
 
@@ -16,6 +17,7 @@ public class BankingApp {
     private static final String password = "root@123"; // replace it with your password
 
     public static boolean isValidAmount(double amount, double balance) {
+
         return (amount > 0 && amount <= balance);
     }
 
@@ -45,32 +47,7 @@ public class BankingApp {
 
     // A small utility to hash passwords using SHA-256
 
-    public class PasswordHasher {
 
-
-        // This method takes a password and returns its SHA-256 hash
-        public static String hash(String password) {
-            try {
-                // Get a SHA-256 hasher
-                MessageDigest md = MessageDigest.getInstance("SHA-256");
-
-                // Turn password into bytes and hash it
-                byte[] hashedBytes = md.digest(password.getBytes());
-
-                // Convert the bytes into a readable hexadecimal string
-                StringBuilder hexString = new StringBuilder();
-                for (byte b : hashedBytes) {
-                    hexString.append(String.format("%02x", b));
-                }
-
-                return hexString.toString();
-
-            } catch (Exception e) {
-                System.out.println("Something went wrong while hashing the password.");
-                return null;
-            }
-        }
-    }
 
     public static double getValidAmount(BufferedReader reader) {
         while (true) {
@@ -212,21 +189,22 @@ public class BankingApp {
         int accountNum = Integer.parseInt(accountNumber);
 
         while (true) {
-            
 
-          System.out.println("\n╔══════════════════════════════════════╗");
-            System.out.println("║           USER DASHBOARD...          ║");
-              System.out.println("║           Account: %s                ║".formatted(accountNumber) );
-            System.out.println("╠══════════════════════════════════════╣");
-            System.out.println("║  1  Check Account Balance            ║");
-            System.out.println("║  2  Deposit Money                    ║");
-            System.out.println("║  3  Withdraw Money                   ║");
-            System.out.println("║  4  Transfer Money                   ║");
-            System.out.println("║  5  View Transaction History         ║");
-            System.out.println("║  6  Update Account Information       ║");
-            System.out.println("║  7  Delete Account                   ║");
-            System.out.println("║  0  Logout                           ║");
-            System.out.println("╚══════════════════════════════════════╝");
+
+            System.out.println();
+            System.out.println("=========== USER DASHBOARD ===========");
+            System.out.println("Account: " + accountNumber);
+            System.out.println("--------------------------------------");
+            System.out.println(" 1. Check Account Balance");
+            System.out.println(" 2. Deposit Money");
+            System.out.println(" 3. Withdraw Money");
+            System.out.println(" 4. Transfer Money");
+            System.out.println(" 5. View Transaction History");
+            System.out.println(" 6. Update Account Information");
+            System.out.println(" 7. Delete Account");
+            System.out.println(" 0. Logout");
+            System.out.println("======================================");
+
 
             System.out.print("Enter your choice : ");
             choice = getValidInteger(reader);
@@ -306,18 +284,20 @@ public class BankingApp {
         String accN;
 
         while (true) {
-            
 
-        System.out.println("  \n╔════════════════════════════════════╗");
-            System.out.println("║          ...ADMIN PANEL...         ║");
-            System.out.println("╠════════════════════════════════════╣");
-            System.out.println("║  1 View All Accounts               ║");
-            System.out.println("║  2 Search Account by Number        ║");
-            System.out.println("║  3 View All Transactions           ║");
-            System.out.println("║  4 Delete User Account             ║");
-            System.out.println("║  0 Logout                          ║");
-            System.out.println("╚════════════════════════════════════╝");
-            
+
+            System.out.println();
+            System.out.println("======================================");
+            System.out.println("           ...ADMIN PANEL...          ");
+            System.out.println("======================================");
+            System.out.println(" 1. View All Accounts");
+            System.out.println(" 2. Search Account by Number");
+            System.out.println(" 3. View All Transactions");
+            System.out.println(" 4. Delete User Account");
+            System.out.println(" 0. Logout");
+            System.out.println("======================================");
+
+
             System.out.print("Enter a valid integer: ");
             choice = getValidInteger(reader);
 
@@ -389,15 +369,17 @@ public class BankingApp {
         int choice;
 
         while (true) {
-            
-   System.out.println("   \n╔═════════════════════════════════════╗");
-        System.out.println("║         ...MAIN MENU...             ║");
-        System.out.println("╠═════════════════════════════════════╣");
-        System.out.println("║  1  Create New Account              ║");
-        System.out.println("║  2  User Login                      ║");
-        System.out.println("║  3  Admin Login                     ║");
-        System.out.println("║  0  Exit                            ║");
-        System.out.println("╚═════════════════════════════════════╝");
+
+            System.out.println();
+            System.out.println("=======================================");
+            System.out.println("            ...MAIN MENU...            ");
+            System.out.println("=======================================");
+            System.out.println(" 1. Create New Account");
+            System.out.println(" 2. User Login");
+            System.out.println(" 3. Admin Login");
+            System.out.println(" 0. Exit");
+            System.out.println("=======================================");
+
             System.out.print("Enter your choice: ");
 
             choice = getValidInteger(reader);
