@@ -16,6 +16,7 @@ public class Validator{
                 try {
 
                     return Integer.parseInt(reader.readLine());
+
                 } catch (NumberFormatException | IOException e) {
                     System.out.print("Invalid number, try again: ");
                 }

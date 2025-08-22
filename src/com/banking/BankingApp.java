@@ -60,6 +60,22 @@ public class BankingApp {
                 int MainMenuChoice = mainMenu(reader);
                 switch (MainMenuChoice) {
 
+                    case 0:
+                        System.out.println("\n=================================\n");
+
+                        System.out.println(" Exiting... Thank you!");
+                        try {
+                            reader.close();
+                            connection.close();
+                            System.exit(0);
+
+                        } catch (IOException e) {
+                            System.out.println("Error closing resources: " + e.getMessage());
+                        }
+
+
+
+
                     case 1:
                         System.out.println("\n=================================\n");
                         System.out.println(" Create Account Selected");
@@ -103,20 +119,7 @@ public class BankingApp {
                         }
                         break;
 
-                    case 0:
-                        System.out.println("\n=================================\n");
 
-                        System.out.println(" Exiting... Thank you!");
-                        try {
-                            reader.close();
-                            connection.close();
-                            System.exit(0);
-
-                        } catch (IOException e) {
-                            System.out.println("Error closing resources: " + e.getMessage());
-                        }
-
-                        break;
 
                     default:
                         System.out.println("Please enter the correct choice");
@@ -338,7 +341,7 @@ public class BankingApp {
 
             choice = getValidInteger(reader);
 
-            if (!(choice < 4 && choice > 0)) {
+            if (!(choice < 4 && choice >= 0)) {
                 System.out.println(" Please enter 0, 1, 2 or 3 only.");
 
             } else {
