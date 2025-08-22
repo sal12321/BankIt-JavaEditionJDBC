@@ -1,11 +1,12 @@
 package src.com.banking;
-import java.security.MessageDigest;
 import java.io.InputStreamReader;
 import java.sql.*;
 import java.util.InputMismatchException;
 import java.io.BufferedReader;
 import java.io.IOException;
 import src.com.banking.passHash.PasswordHasher ;
+
+import static src.com.banking.validator.Validator.* ;
 
 public class BankingApp {
 
@@ -16,54 +17,7 @@ public class BankingApp {
     private static final String username = "root";  //  replace it with your username
     private static final String password = "root@123"; // replace it with your password
 
-    public static boolean isValidAmount(double amount, double balance) {
 
-        return (amount > 0 && amount <= balance);
-    }
-
-    public static int getValidInteger(BufferedReader reader) {
-        {
-            while (true) {
-                try {
-
-                    return Integer.parseInt(reader.readLine());
-                } catch (NumberFormatException | IOException e) {
-                    System.out.print("Invalid number, try again: ");
-                }
-            }
-        }
-    }
-
-    public static double getValidDouble(BufferedReader reader) {
-        while (true) {
-            try {
-                String input = reader.readLine();
-                return Double.parseDouble(input);
-            } catch (Exception e) {
-                System.out.println("Enter a valid number...");
-            }
-        }
-    }
-
-    // A small utility to hash passwords using SHA-256
-
-
-
-    public static double getValidAmount(BufferedReader reader) {
-        while (true) {
-            try {
-                String input = reader.readLine();
-                double amount = Double.parseDouble(input);
-                if (amount > 0) {
-                    return amount;
-                } else {
-                    System.out.println("Amount must be greater than 0.");
-                }
-            } catch (NumberFormatException | IOException e) {
-                System.out.println("Enter a valid amount...");
-            }
-        }
-    }
 
     public static boolean isActiveAccount(int accNo, Connection connection) {
         String query = "SELECT is_active FROM users WHERE acc_no = ?";
