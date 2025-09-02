@@ -200,7 +200,7 @@ public class BankingApp {
                         System.out.println("\n=================================\n");
 
                         System.out.println(" Viewing Transaction History...");
-                        // viewTransactionHistory(accountNumber , connection);
+                         viewAccTransactionHistory(  connection, accountNumber);
                         break;
                     case 6:
                         System.out.println("\n=================================\n");
@@ -1077,6 +1077,50 @@ public class BankingApp {
             String query = "SELECT * FROM logs LIMIT ?";
             PreparedStatement p = connection.prepareStatement(query);
             p.setInt(1, limit);
+            ResultSet rs = p.executeQuery();
+
+            if (!rs.isBeforeFirst()) {
+                System.out.println("Could not fetch logs...");
+            } else {
+                while (rs.next()) {
+                    System.out.println("Account type: " + rs.getString("Who"));
+                    System.out.println("Acc_No : " + rs.getInt("WhoseId"));
+                    System.out.println("Action: " + rs.getString("What"));
+                    System.out.println("target_Acc : " + rs.getInt("WhomeId"));
+                    System.out.println("message : " + rs.getString("message"));
+                    System.out.println("timestamp: " + rs.getTimestamp("timestamp"));
+                    System.out.println("status: " + rs.getString("status"));
+                    System.out.println("----------------------------");
+                }
+            }
+
+        } catch (SQLException e) {
+            System.out.println("SQL Error: " + e.getMessage());
+        }
+    }
+
+
+
+    public static void viewAccTransactionHistory(Connection connection , String accNumber ) {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter the limit: ");
+        int limit;
+
+        while (true) {
+            try {
+                limit = Integer.parseInt(br.readLine());
+                break;
+            } catch (Exception e) {
+                System.out.println("Please enter a valid number.");
+            }
+        }
+
+        try {
+            String query = "SELECT * FROM logs where WhoseId = ?  logs LIMIT ?";
+            PreparedStatement p = connection.prepareStatement(query);
+            p.setString(1, accNumber);
+            p.setInt(2, limit);
+
             ResultSet rs = p.executeQuery();
 
             if (!rs.isBeforeFirst()) {

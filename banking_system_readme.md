@@ -114,14 +114,21 @@ INSERT INTO admins (username, password) VALUES
 Your folder structure should look like this:
 
 ```
-bankIT/
+📁 Folder Structure:
+--------------------
+BankIt-JavaEditionJDBC/
 ├── run.bat
 ├── lib/
 │   └── mysql-connector-j-9.3.0.jar
 ├── src/
 │   └── com/
 │       └── banking/
-│           └── BankingApp.java
+│           ├── BankingApp.java
+│           ├── validator/
+│           │   └── InputValidator.java
+│           └── hasher/
+│               └── PasswordHasher.java
+
 ```
 
 ### 3. Configuration
